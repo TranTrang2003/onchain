@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <style>
+      /* Đặt ảnh nền cho toàn bộ body */
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh; /* Chiếm toàn bộ chiều cao */
+        background-image: url('/anh3.jpg'); /* Đảm bảo ảnh này có trong thư mục public */
+        background-size: cover; /* Lấp đầy toàn bộ màn hình */
+        background-position: center; /* Canh giữa ảnh */
+        background-repeat: no-repeat;
+      }
+      
+      /* Đảm bảo mọi phần tử trong trang cũng được bao phủ bởi ảnh nền */
+      #root {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+    <div id="root"></div>
+  </body>
+</html>
+
+
